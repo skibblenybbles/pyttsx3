@@ -11,26 +11,37 @@
 
 <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/nateshmbhat"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee 😇"><span style="margin-left:5px;font-size:19px !important;">Buy me a coffee 😇</span></a>
 
+
+## This is a **bugfix fork**
+
+*This is another fork of [pyttsx3](https://pypi.org/project/pyttsx3/) to make bugfixes available in PyPi. Forking is not an ideal solution, but it appears that the original project has not been maintained for some time.*
+
+Please note that the GitHub link on PyPi leads to the forked code repository. Everything except for the content under this heading and the bugfixes in the codebase are from the original author(s).
+
+The issues addressed in this fork are:
+
+- Resolves #142 for empty `save_to_file()` on darwin platform
+
+
 ## Installation :
 
+	pip install pyttsx3-alt
 
-	pip install pyttsx3
-
-> If you get installation errors , make sure you first upgrade your wheel version using :  
+> If you get installation errors , make sure you first upgrade your wheel version using :
 `pip install --upgrade wheel`
 
-### Linux installation requirements : 
+### Linux installation requirements :
 
-+ If you are on a linux system and if the voice output is not working , then  : 
++ If you are on a linux system and if the voice output is not working , then  :
 
-	Install espeak , ffmpeg and libespeak1 as shown below: 
+	Install espeak , ffmpeg and libespeak1 as shown below:
 
 	```
 	sudo apt update && sudo apt install espeak ffmpeg libespeak1
 	```
 
 
-## Features : 
+## Features :
 
 - ✨Fully **OFFLINE** text to speech conversion
 - 🎈 Choose among different voices installed in your system
@@ -56,7 +67,7 @@ import pyttsx3
 pyttsx3.speak("I will speak this text")
 ```
 
-	
+
 **Changing Voice , Rate and Volume :**
 
 ```python3
